@@ -1,14 +1,18 @@
-import logo from './logo512.png';
-const reactDescription = ['Fundamental','Crucial' ,'Core'];
-function genRandomInt(max){
-  return Math.floor(Math.random()*(max+1));
-}
+
+import CoreConcepts from './components/CoreConcepts.jsx';
+import Header from './components/Header/Header.jsx';
+// import { EXAMPLES } from './data.js';
+import Examples from './components/Examples.jsx';
 function App() {
   return (
-    <>
-    <img src={logo} alt="react_logo" />
-     <h1>hello {reactDescription[genRandomInt(2)]}, cerate react app </h1>
-    </>
+    <div>
+      <Header />
+      <main>
+        <CoreConcepts/>
+        <Examples/>
+      </main>
+    </div>
   );
 }
+
 export default App;
