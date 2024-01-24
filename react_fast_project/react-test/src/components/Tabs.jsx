@@ -1,9 +1,7 @@
-export default function Tabs({childern}){
+export default function Tabs({childern,buttons,ButtonsContainer='menu'}){
   return(
     <>
-    <manu>
-
-    </manu>
+    <ButtonsContainer>{buttons}</ButtonsContainer>
     {childern}
     </>
     )
